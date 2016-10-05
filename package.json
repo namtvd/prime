@@ -6,11 +6,16 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
+    "coveralls": "^2.11.14",
+    "eslint": "^3.7.1",
     "eslint-config-ggc": "^1.2.22",
+    "istanbul": "^0.4.5",
+    "js-beautify": "^1.6.4",
     "mocha": "^3.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "eslint src",
+    "test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec --recursive --timeout 5000"
   },
   "keywords": [
     "prime"
