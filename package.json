@@ -1,5 +1,5 @@
 {
-  "name": "prime",
+  "name": "sum-primes",
   "version": "1.0.0",
   "description": "Prime library",
   "main": "src/index.js",
