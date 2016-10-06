@@ -1,6 +1,6 @@
 {
   "name": "sum-primes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prime library",
   "main": "src/index.js",
   "dependencies": {},
