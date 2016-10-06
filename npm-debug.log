@@ -1,0 +1,115 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\namtv\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.8
+3 info using node@v4.5.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'd:\\prime',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\namtv\AppData\Roaming\npm-cache\prime\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\namtv\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle prime@1.0.0~prepublish: prime@1.0.0
+11 silly lifecycle prime@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\namtv\\AppData\\Roaming\\npm-cache\\prime\\1.0.0\\package.tgz',
+12 verbose tar pack   'd:\\prime' ]
+13 verbose tarball C:\Users\namtv\AppData\Roaming\npm-cache\prime\1.0.0\package.tgz
+14 verbose folder d:\prime
+15 verbose addLocalTarball adding from inside cache C:\Users\namtv\AppData\Roaming\npm-cache\prime\1.0.0\package.tgz
+16 verbose correctMkdir C:\Users\namtv\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd prime@1.0.0
+18 verbose afterAdd C:\Users\namtv\AppData\Roaming\npm-cache\prime\1.0.0\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\namtv\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\namtv\AppData\Roaming\npm-cache\prime\1.0.0\package\package.json written
+21 silly publish { name: 'prime',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'Prime library',
+21 silly publish   main: 'src/index.js',
+21 silly publish   dependencies: {},
+21 silly publish   devDependencies:
+21 silly publish    { chai: '^3.5.0',
+21 silly publish      coveralls: '^2.11.14',
+21 silly publish      eslint: '^3.7.1',
+21 silly publish      'eslint-config-ggc': '^1.2.22',
+21 silly publish      istanbul: '^0.4.5',
+21 silly publish      'js-beautify': '^1.6.4',
+21 silly publish      mocha: '^3.0.2' },
+21 silly publish   scripts:
+21 silly publish    { pretest: 'eslint src',
+21 silly publish      test: 'istanbul cover node_modules/mocha/bin/_mocha -- -R spec --recursive --timeout 5000' },
+21 silly publish   keywords: [ 'prime' ],
+21 silly publish   author: { name: 'namtvd' },
+21 silly publish   license: 'MIT',
+21 silly publish   readme: '#Sum prime package\r\n\r\n[![Build Status](https://travis-ci.org/zznamtran123/prime.svg?branch=master)](https://travis-ci.org/zznamtran123/prime)\r\n[![Coverage Status](https://coveralls.io/repos/github/zznamtran123/prime/badge.svg)](https://coveralls.io/github/zznamtran123/prime)\r\n\r\nA small package to check sum prime package',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '4a2a1729af4905abd31a8602682c592cbd54c10f',
+21 silly publish   _id: 'prime@1.0.0',
+21 silly publish   _shasum: 'c48837849073218e31f92109fb10113becb0fb4f',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name prime
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'prime',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'prime',
+26 silly mapToRegistry   name: 'prime',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/prime
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\namtv\AppData\Roaming\npm-cache\prime\1.0.0\package.tgz
+30 verbose request uri https://registry.npmjs.org/prime
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 8:12:51 AM
+33 verbose request using bearer token for auth
+34 verbose request id 291462085a99ee6d
+35 http request PUT https://registry.npmjs.org/prime
+36 http 403 https://registry.npmjs.org/prime
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '99',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Thu, 06 Oct 2016 01:12:59 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sin6921-SIN',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1475716378.288576,VS0,VE838',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating C:\Users\namtv\AppData\Roaming\npm-cache\registry.npmjs.org\prime on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "prime". Are you logged in as the correct user? : prime
+40 verbose stack     at makeError (C:\Users\namtv\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\namtv\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+40 verbose stack     at Request._callback (C:\Users\namtv\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+40 verbose stack     at Request.self.callback (C:\Users\namtv\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:187:22)
+40 verbose stack     at emitTwo (events.js:87:13)
+40 verbose stack     at Request.emit (events.js:172:7)
+40 verbose stack     at Request.<anonymous> (C:\Users\namtv\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1044:10)
+40 verbose stack     at emitOne (events.js:77:13)
+40 verbose stack     at Request.emit (events.js:169:7)
+40 verbose stack     at IncomingMessage.<anonymous> (C:\Users\namtv\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:965:12)
+41 verbose statusCode 403
+42 verbose pkgid prime
+43 verbose cwd d:\prime
+44 error Windows_NT 10.0.14936
+45 error argv "c:\\Program Files\\nodejs\\node.exe" "C:\\Users\\namtv\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v4.5.0
+47 error npm  v3.10.8
+48 error code E403
+49 error you do not have permission to publish "prime". Are you logged in as the correct user? : prime
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
